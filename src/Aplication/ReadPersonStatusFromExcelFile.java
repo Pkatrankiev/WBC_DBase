@@ -63,11 +63,11 @@ public class ReadPersonStatusFromExcelFile {
 
 					EGN = ReadExcelFileWBC.getStringfromCell(cell);
 					boolean fl= true;
-					while (listPerson.next()) {
-						if(person.getEgn().equals(EGN)) {
-							fl=false;
-						}
-					}
+//					while (listPerson.next()) {
+//						if(person.getEgn().equals(EGN)) {
+//							fl=false;
+//						}
+//					}
 					if (listPerson.size() == 0) {
 						FirstName = ReadExcelFileWBC.getStringfromCell(cell1);
 						String[] names = ReadExcelFileWBC.splitAllName(FirstName);
