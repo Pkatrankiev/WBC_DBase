@@ -1,0 +1,294 @@
+
+< 26.10.2022 (10:22:04) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 unexpected token: = in statement [delete from TypeMeasur TypeMeasur_ID = ?]
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:555)
+	at BasiClassDAO.TypeMeasurDAO.deleteValueTypeMeasur(TypeMeasurDAO.java:96)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:39)
+Caused by: java.sql.SQLSyntaxErrorException: unexpected token: = in statement [delete from TypeMeasur TypeMeasur_ID = ?]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.prepareStatement(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:551)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: unexpected token: =
+	at org.hsqldb.error.Error.parseError(Unknown Source)
+	at org.hsqldb.ParserBase.unexpectedToken(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatement(Unknown Source)
+	at org.hsqldb.Session.compileStatement(Unknown Source)
+	at org.hsqldb.StatementManager.compile(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 5 more
+
+< 26.10.2022 (11:19:19) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 user lacks privilege or object not found: PASS in statement [SELECT * FROM TypeMeasur  where Pass = ?  ORDER BY NikName ASC]
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:555)
+	at BasiClassDAO.TypeMeasurDAO.getValueTypeMeasurByObjectSortByColumnName(TypeMeasurDAO.java:211)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:23)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: PASS in statement [SELECT * FROM TypeMeasur  where Pass = ?  ORDER BY NikName ASC]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.prepareStatement(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:551)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: PASS
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.ExpressionColumn.checkColumnsResolved(Unknown Source)
+	at org.hsqldb.QueryExpression.resolve(Unknown Source)
+	at org.hsqldb.ParserDQL.compileCursorSpecification(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatement(Unknown Source)
+	at org.hsqldb.Session.compileStatement(Unknown Source)
+	at org.hsqldb.StatementManager.compile(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 5 more
+
+< 26.10.2022 (11:28:13) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 user lacks privilege or object not found: KODETYPE
+	at net.ucanaccess.jdbc.UcanaccessStatement.executeQuery(UcanaccessStatement.java:218)
+	at BasiClassDAO.UsersWBCDAO.getValueUsersWBCSortByColumnName(UsersWBCDAO.java:156)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:20)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: KODETYPE
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCStatement.fetchResult(Unknown Source)
+	at org.hsqldb.jdbc.JDBCStatement.executeQuery(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessStatement.executeQuery(UcanaccessStatement.java:216)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: KODETYPE
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.ExpressionColumn.checkColumnsResolved(Unknown Source)
+	at org.hsqldb.QueryExpression.resolve(Unknown Source)
+	at org.hsqldb.ParserDQL.compileCursorSpecification(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatements(Unknown Source)
+	at org.hsqldb.Session.executeDirectStatement(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 5 more
+
+< 26.10.2022 (14:20:23) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 user lacks privilege or object not found: LABORATORY_ID in statement [SELECT * FROM Laboratory  where Laboratory_ID = ?]
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:555)
+	at BasiClassDAO.LaboratoryDAO.getValueLaboratoryByID(LaboratoryDAO.java:208)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:26)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: LABORATORY_ID in statement [SELECT * FROM Laboratory  where Laboratory_ID = ?]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.prepareStatement(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:551)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: LABORATORY_ID
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.ExpressionColumn.checkColumnsResolved(Unknown Source)
+	at org.hsqldb.QueryExpression.resolve(Unknown Source)
+	at org.hsqldb.ParserDQL.compileCursorSpecification(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatement(Unknown Source)
+	at org.hsqldb.Session.compileStatement(Unknown Source)
+	at org.hsqldb.StatementManager.compile(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 5 more
+
+< 26.10.2022 (14:21:15) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 Column not found: Laboratory_ID
+	at net.ucanaccess.jdbc.UcanaccessResultSet.getInt(UcanaccessResultSet.java:519)
+	at BasiClassDAO.LaboratoryDAO.getValueLaboratoryByID(LaboratoryDAO.java:215)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:26)
+Caused by: java.sql.SQLException: Column not found: Laboratory_ID
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCResultSet.findColumn(Unknown Source)
+	at org.hsqldb.jdbc.JDBCResultSet.getInt(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessResultSet.getInt(UcanaccessResultSet.java:517)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: Column not found: Laboratory_ID
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	... 6 more
+
+< 26.10.2022 (14:25:08) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 incompatible data type in conversion
+	at net.ucanaccess.jdbc.UcanaccessPreparedStatement.setObject(UcanaccessPreparedStatement.java:694)
+	at BasiClassDAO.MeasuringDAO.setValueMeasuring(MeasuringDAO.java:37)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:21)
+Caused by: java.sql.SQLSyntaxErrorException: incompatible data type in conversion
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setObject(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessPreparedStatement.setObject(UcanaccessPreparedStatement.java:691)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: incompatible data type in conversion
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.types.NumberType.convertToDefaultType(Unknown Source)
+	... 5 more
+
+< 26.10.2022 (14:28:05) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 data exception: invalid datetime format: java.text.ParseException: Unparseable date: "22.12.2022"
+	at net.ucanaccess.jdbc.UcanaccessPreparedStatement.setObject(UcanaccessPreparedStatement.java:694)
+	at BasiClassDAO.MeasuringDAO.setValueMeasuring(MeasuringDAO.java:38)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:21)
+Caused by: java.sql.SQLDataException: data exception: invalid datetime format: java.text.ParseException: Unparseable date: "22.12.2022"
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setObject(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessPreparedStatement.setObject(UcanaccessPreparedStatement.java:691)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: data exception: invalid datetime format: java.text.ParseException: Unparseable date: "22.12.2022"
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.HsqlDateTime.toDate(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToDatetimeSpecial(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToType(Unknown Source)
+	... 5 more
+
+< 26.10.2022 (14:29:44) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 incompatible data type in conversion
+	at net.ucanaccess.jdbc.UcanaccessPreparedStatement.setObject(UcanaccessPreparedStatement.java:694)
+	at BasiClassDAO.MeasuringDAO.setValueMeasuring(MeasuringDAO.java:41)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:21)
+Caused by: java.sql.SQLSyntaxErrorException: incompatible data type in conversion
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setObject(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessPreparedStatement.setObject(UcanaccessPreparedStatement.java:691)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: incompatible data type in conversion
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.types.NumberType.convertToDefaultType(Unknown Source)
+	... 5 more
+
+< 27.10.2022 (10:14:38) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 user lacks privilege or object not found: ID in statement [SELECT * FROM Person where ID = ?]
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:555)
+	at BasiClassDAO.PersonDAO.getValuePersonByID(PersonDAO.java:218)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:27)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: ID in statement [SELECT * FROM Person where ID = ?]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.prepareStatement(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:551)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: ID
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.ExpressionColumn.checkColumnsResolved(Unknown Source)
+	at org.hsqldb.QueryExpression.resolve(Unknown Source)
+	at org.hsqldb.ParserDQL.compileCursorSpecification(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatement(Unknown Source)
+	at org.hsqldb.Session.compileStatement(Unknown Source)
+	at org.hsqldb.StatementManager.compile(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 5 more
+
+< 27.10.2022 (10:19:47) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 user lacks privilege or object not found: PERSON_PERSON_ID in statement [SELECT * FROM Person where Person_Person_ID = ?]
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:555)
+	at BasiClassDAO.PersonDAO.getValuePersonByID(PersonDAO.java:218)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:27)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: PERSON_PERSON_ID in statement [SELECT * FROM Person where Person_Person_ID = ?]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.prepareStatement(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:551)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: PERSON_PERSON_ID
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.ExpressionColumn.checkColumnsResolved(Unknown Source)
+	at org.hsqldb.QueryExpression.resolve(Unknown Source)
+	at org.hsqldb.ParserDQL.compileCursorSpecification(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatement(Unknown Source)
+	at org.hsqldb.Session.compileStatement(Unknown Source)
+	at org.hsqldb.StatementManager.compile(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 5 more
+
+< 27.10.2022 (10:20:29) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 user lacks privilege or object not found: PERSONID in statement [INSERT INTO Measuring (PersonID, Date, Doze, GGP, LabID, UsersID, TypeMeasurID) VALUES (?, ?, ?, ?, ?, ?, ?)]
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:555)
+	at BasiClassDAO.MeasuringDAO.setValueMeasuring(MeasuringDAO.java:36)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:26)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: PERSONID in statement [INSERT INTO Measuring (PersonID, Date, Doze, GGP, LabID, UsersID, TypeMeasurID) VALUES (?, ?, ?, ?, ?, ?, ?)]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.prepareStatement(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:551)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: PERSONID
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.ParserDQL.readSimpleColumnName(Unknown Source)
+	at org.hsqldb.ParserDQL.readSimpleColumnNames(Unknown Source)
+	at org.hsqldb.ParserDML.compileInsertStatement(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatement(Unknown Source)
+	at org.hsqldb.Session.compileStatement(Unknown Source)
+	at org.hsqldb.StatementManager.compile(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 5 more
+
+< 27.10.2022 (10:33:23) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 user lacks privilege or object not found: PERSONID in statement [INSERT INTO Measuring (PersonID, Date, Doze, GGP, LabID, UsersID, TypeMeasurID) VALUES (?, ?, ?, ?, ?, ?, ?)]
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:555)
+	at BasiClassDAO.MeasuringDAO.setValueMeasuring(MeasuringDAO.java:37)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:28)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: PERSONID in statement [INSERT INTO Measuring (PersonID, Date, Doze, GGP, LabID, UsersID, TypeMeasurID) VALUES (?, ?, ?, ?, ?, ?, ?)]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.prepareStatement(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:551)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: PERSONID
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.ParserDQL.readSimpleColumnName(Unknown Source)
+	at org.hsqldb.ParserDQL.readSimpleColumnNames(Unknown Source)
+	at org.hsqldb.ParserDML.compileInsertStatement(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatement(Unknown Source)
+	at org.hsqldb.Session.compileStatement(Unknown Source)
+	at org.hsqldb.StatementManager.compile(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 5 more
+
+< 27.10.2022 (10:37:19) EEST > 
+net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::5.0.1 user lacks privilege or object not found: USERS_ID in statement [INSERT INTO Measuring (Person_ID, Date, Doze, GGP, Lab_ID, Users_ID, TypeMeasur_ID) VALUES (?, ?, ?, ?, ?, ?, ?)]
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:555)
+	at BasiClassDAO.MeasuringDAO.setValueMeasuring(MeasuringDAO.java:37)
+	at Aplication.Main_ClassAplication.main(Main_ClassAplication.java:28)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: USERS_ID in statement [INSERT INTO Measuring (Person_ID, Date, Doze, GGP, Lab_ID, Users_ID, TypeMeasur_ID) VALUES (?, ?, ?, ?, ?, ?, ?)]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.prepareStatement(Unknown Source)
+	at net.ucanaccess.jdbc.UcanaccessConnection.prepareStatement(UcanaccessConnection.java:551)
+	... 2 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: USERS_ID
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.ParserDQL.readSimpleColumnName(Unknown Source)
+	at org.hsqldb.ParserDQL.readSimpleColumnNames(Unknown Source)
+	at org.hsqldb.ParserDML.compileInsertStatement(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatement(Unknown Source)
+	at org.hsqldb.Session.compileStatement(Unknown Source)
+	at org.hsqldb.StatementManager.compile(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 5 more
